@@ -1,6 +1,8 @@
 # SVHack_group3
 
 # Impact of bacteria diversity on alignment accuracy for antibiotic resistant organisms
+![Logo_v1](https://github.com/collaborativebioinformatics/SVHack_metagenomics/assets/72709799/af279486-bf2e-4bac-97ca-0ea58eb1f1ee)
+
 
 ## Introduction
 The rapid tracking of antibiotic resistance evolution has been revolutionised by high-throughput technologies in bacterial sequencing. To study the variations among different strains, prokaryotic pangenomics  has proven to be invaluable.
