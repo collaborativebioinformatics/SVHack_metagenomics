@@ -3,6 +3,11 @@
 Impact of bacteria diversity on alignment accuracy for antibiotic resistant organisms
 ![Blank diagram](https://github.com/collaborativebioinformatics/SVHack_metagenomics/assets/72709799/a7a2a040-aa64-48a1-9650-482cbbc3e647)
 
+
+
+![Flow_chart_Day1](https://github.com/collaborativebioinformatics/SVHack_metagenomics/assets/72709799/f22e93af-ff21-4df4-a173-1ed5422bc7b9)
+
+
 Task A : Graph genome Construction 
 
 Task A1: Download genome assemblies full-length genome, diverse strains isolated from different environments (find assembly accession and make a metadata table).  Tania, Tony
