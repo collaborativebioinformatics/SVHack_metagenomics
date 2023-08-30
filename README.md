@@ -1,6 +1,7 @@
 # SVHack_group3
 
 Impact of bacteria diversity on alignment accuracy for antibiotic resistant organisms
+![Blank diagram](https://github.com/collaborativebioinformatics/SVHack_metagenomics/assets/72709799/a7a2a040-aa64-48a1-9650-482cbbc3e647)
 
 Task A : Graph genome Construction 
 
