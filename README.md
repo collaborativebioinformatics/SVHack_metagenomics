@@ -1,6 +1,9 @@
 # SVHack_group3
 ![Logo_v2](https://github.com/collaborativebioinformatics/SVHack_metagenomics/assets/72709799/f7b8c8b7-b404-47ac-9add-460f12e75a54)
-<img src="[drawing.jpg](https://github.com/collaborativebioinformatics/SVHack_metagenomics/assets/72709799/f7b8c8b7-b404-47ac-9add-460f12e75a54)" alt="drawing" width="200"/>
+
+<img src="https://github.com/collaborativebioinformatics/SVHack_metagenomics/assets/72709799/f7b8c8b7-b404-47ac-9add-460f12e75a54" alt="Logo_v2" width="200"/>
+
+
 # Impact of bacteria diversity on alignment accuracy for antibiotic resistant organisms
 
 
