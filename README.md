@@ -62,3 +62,9 @@ We have proceeded to build graph representations for _Pseudomonas aeruginosa_ us
 ![Results_graphs_Hackathon2023 (1)](https://github.com/collaborativebioinformatics/SVHack_metagenomics/assets/72709799/19fab70a-b651-432d-89dd-857a2e43b8b2)
 
 
+
+
+
+# stats on linear reference
+![stats](https://github.com/collaborativebioinformatics/SVHack_metagenomics/blob/main/results/linear_ref.png)
+
