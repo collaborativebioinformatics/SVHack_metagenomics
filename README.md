@@ -58,10 +58,5 @@ Upon generating a graph genome, we will test it by comparing it to a traditional
 
 # Results
 
-Genome graph of 5 Assemblies 
+![Results_graphs_Hackathon2023](https://github.com/collaborativebioinformatics/SVHack_metagenomics/assets/72709799/9ecce467-867b-48d4-a181-c56f4bc083c6)
 
-![Genome 5](graphGenome_viz/5Assemblies_30aug.png)
-
-Genome graph of 10 Assemblies 
-
-![Genome 10](graphGenome_viz/10Assemblies_30aug.png)
