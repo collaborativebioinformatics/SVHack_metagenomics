@@ -1,7 +1,7 @@
 # SVHack_group3
+![Logo_v2](https://github.com/collaborativebioinformatics/SVHack_metagenomics/assets/72709799/f7b8c8b7-b404-47ac-9add-460f12e75a54)
 
 # Impact of bacteria diversity on alignment accuracy for antibiotic resistant organisms
-![Logo_v1](https://github.com/collaborativebioinformatics/SVHack_metagenomics/assets/72709799/af279486-bf2e-4bac-97ca-0ea58eb1f1ee)
 
 
 ## Introduction
@@ -22,6 +22,8 @@ This research initiative aims to explore the intricate relationship between bact
 
 Upon generating a graph genome, we will test it by comparing it to a traditional linear reference genome. Our study methodology involves a meticulous comparison of several critical parameters. We will perform alignments of multiple isolates not used for the generation of the graph genome, and then assess the quantity and quality of mapped reads, alongside computational factors such as processing time and memory utilisation, within both analytical pipelines. This comprehensive evaluation enables us to gain insights into the efficacy and computational efficiency of these pipelines, thereby contributing to a deeper understanding of alignment accuracy in the context of diverse bacterial populations.
 
+
+## Methods
 
 ![Blank diagram](https://github.com/collaborativebioinformatics/SVHack_metagenomics/assets/72709799/a7a2a040-aa64-48a1-9650-482cbbc3e647)
 
