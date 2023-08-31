@@ -1,5 +1,4 @@
 # SVHack_group3
-![Logo_v2](https://github.com/collaborativebioinformatics/SVHack_metagenomics/assets/72709799/f7b8c8b7-b404-47ac-9add-460f12e75a54)
 
 <img src="https://github.com/collaborativebioinformatics/SVHack_metagenomics/assets/72709799/f7b8c8b7-b404-47ac-9add-460f12e75a54" alt="Logo_v2" width="800"/>
 
