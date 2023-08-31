@@ -61,7 +61,9 @@ Task B4: Calculate statistics from alignments (time/#aligned reads/quality distr
 # Results
 
 Genome graph of 5 Assemblies 
-![Genome ](graphGenome_viz/10Assemblies_30aug.png)
 
+![Genome 5](graphGenome_viz/5Assemblies_30aug.png)
 
 Genome graph of 10 Assemblies 
+
+![Genome 10](graphGenome_viz/10Assemblies_30aug.png)
