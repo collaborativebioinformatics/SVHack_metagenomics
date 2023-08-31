@@ -1,6 +1,7 @@
 # SVHack_group3
 
-<img src="https://github.com/collaborativebioinformatics/SVHack_metagenomics/assets/72709799/f7b8c8b7-b404-47ac-9add-460f12e75a54" alt="Logo_v2" width="800"/>
+<img src="https://github.com/collaborativebioinformatics/SVHack_metagenomics/assets/72709799/4a4ffcf6-d417-4efc-b2ed-ff0d4e8c7073" alt="Logo_v2" width="800"/>
+
 
 
 # Impact of bacteria diversity on alignment accuracy for antibiotic resistant organisms
@@ -27,7 +28,8 @@ Upon generating a graph genome, we will test it by comparing it to a traditional
 
 ## Methods
 
-![Blank diagram](https://github.com/collaborativebioinformatics/SVHack_metagenomics/assets/72709799/a7a2a040-aa64-48a1-9650-482cbbc3e647)
+![Flowchart-hackathon2023](https://github.com/collaborativebioinformatics/SVHack_metagenomics/assets/72709799/3a43d8a7-0d69-445c-9b42-1489d31b82b3)
+
 
 ## Details on the tasks at hand
 
