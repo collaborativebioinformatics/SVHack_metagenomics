@@ -57,6 +57,7 @@ Upon generating a graph genome, we will test it by comparing it to a traditional
 |Task B4 |Calculate statistics from alignments (time/#aligned reads/quality distribution). |  ||
 
 # Results
+We have proceeded to build graph representations for _Pseudomonas aeruginosa_ using 5, 10 and 20 genomes. As more assemblies are used, the graph grows in complexity and more regions of the genome are visibly accessories and not core. Observing the sequenced alignments of the 20 asssemblies used to create that graph, one can see big chunks of the sequences being absent from most of the different isolates, while others are present in all. 
 
 ![Results_graphs_Hackathon2023 (1)](https://github.com/collaborativebioinformatics/SVHack_metagenomics/assets/72709799/19fab70a-b651-432d-89dd-857a2e43b8b2)
 
