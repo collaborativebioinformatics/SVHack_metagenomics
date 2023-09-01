@@ -71,10 +71,9 @@ Similar to the single reference genome, reads were mapped to pangenome graphs us
 # Results
 We have proceeded to build graph representations for _Pseudomonas aeruginosa_ using 5, 10 and 20 genomes. As more assemblies are used, the graph grows in complexity and more regions of the genome are visibly accessories and not core. Observing the sequenced alignments of the 20 asssemblies used to create that graph, one can see big chunks of the sequences being absent from most of the different isolates, while others are present in all. 
 
-![Results_graphs_Hackathon2023 (1)](https://github.com/collaborativebioinformatics/SVHack_metagenomics/assets/72709799/19fab70a-b651-432d-89dd-857a2e43b8b2)
-
-
-
+![Results_graphs_Hackathon2023 (2)](https://github.com/collaborativebioinformatics/SVHack_metagenomics/assets/72709799/37bc20b3-b37c-49ba-bdfc-097842b67c6a)
+![500AssembliesForTestingRe fa gz fd8c760 417fcdf 11fe66b smooth final og lay draw](https://github.com/collaborativebioinformatics/SVHack_metagenomics/assets/72709799/78c50f80-661b-4c40-b9d7-502915a4e3cb)
+![500AssembliesForTestingRe fa gz fd8c760 417fcdf 11fe66b smooth final og viz_multiqc](https://github.com/collaborativebioinformatics/SVHack_metagenomics/assets/72709799/80fc43a3-f7b4-472c-babc-203ff70127bf)
 
 
 # stats of aligning 60 samples (DNA seqeuencing read)  on the linear reference
