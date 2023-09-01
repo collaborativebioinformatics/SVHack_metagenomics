@@ -58,7 +58,7 @@ Upon generating a graph genome, we will test it by comparing it to a traditional
 
 ### Read Mapping to Single Reference
 
-60 Illumina sequencing datasets including *P. aeruginosa* (NCBI Taxonomy ID 287) reads were downloaded from the Sequence Read Archive (metadata for these samples is included in the linked GitHub repository - https://github.com/collaborativebioinformatics/SVHack_metagenomics/tree/2797b9eec54665258a67ef0277fbd4d06d4e26c7/reads_info). The reference sequence [NC_002516.2](https://www.ncbi.nlm.nih.gov/nuccore/NC_002516.2/) (Genome assembly ASM676v1) derived from the PA01 strain was also downloaded. BWA-MEM (ver. 0.7.17 [r1188]) was used for short-read alignment to the reference genome for all 60 datasets. Quality control statistics were obtained from output files using samtools (ver. ). 
+60 Illumina sequencing datasets including *P. aeruginosa* (NCBI Taxonomy ID 287) reads were downloaded from the Sequence Read Archive (metadata for these samples is included in the linked GitHub repository - https://github.com/collaborativebioinformatics/SVHack_metagenomics/tree/2797b9eec54665258a67ef0277fbd4d06d4e26c7/reads_info). The reference sequence [NC_002516.2](https://www.ncbi.nlm.nih.gov/nuccore/NC_002516.2/) (Genome assembly ASM676v1) derived from the PA01 strain was also downloaded. BWA-MEM (ver. BWA-0.7.17 (r1188)) was used for short-read alignment to the reference genome for all 60 datasets. Quality control statistics were obtained from output files using samtools (ver. ). 
 
 ### Construction of Pangenome Graphs
 
@@ -66,7 +66,7 @@ Of 773 available assemblies, 499 complete *P. aeruginosa* genomes were downloade
 
 ### Read Mapping to the Pangenome
 
-Similar to the single reference genome, reads were mapped to pangenome graphs using GraphAligner (v1.0.17b). 
+Similar to the single reference genome, reads were mapped to pangenome graphs using GraphAligner (v1.0.10) from the docker image [jmonlong/job-graphaligner:latest](https://hub.docker.com/layers/jmonlong/job-graphaligner/latest/images/sha256-c4f833ea8fd303dbe93872f962ff168684e4dbc5a23b4f844c1e4038d7685c3f?context=explore). Default values related to seeding and extension were used (-seeds-minimizer-count 5 --seeds-minimizer-length 19 --seeds-minimizer-windowsize 30 --seeds-minimizer-chunksize 100 -b 5 -B 10 -C 10000). Statistics related to alignment were extracted from resulting GAM files using vg (ver. 1.23.0) from docker image [biocontainers/vg](https://registry.hub.docker.com/r/biocontainers/vg).
 
 # Results
 We have proceeded to build graph representations for _Pseudomonas aeruginosa_ using 5, 10 and 20 genomes. As more assemblies are used, the graph grows in complexity and more regions of the genome are visibly accessories and not core. Observing the sequenced alignments of the 20 asssemblies used to create that graph, one can see big chunks of the sequences being absent from most of the different isolates, while others are present in all. 
