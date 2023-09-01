@@ -102,8 +102,17 @@ We have proceeded to build graph representations for _Pseudomonas aeruginosa_ us
 ![stats](https://github.com/collaborativebioinformatics/SVHack_metagenomics/blob/main/results/linear_ref.png)
 ![stats2](https://github.com/collaborativebioinformatics/SVHack_metagenomics/blob/main/results/linear_ref_perc.png)
 
-# 20 assemblies graph genome vs linear reference (29 samples)
+# Graph genome vs linear
+
+## 10 assemblies (29 samples)
+![stats2](https://github.com/collaborativebioinformatics/SVHack_metagenomics/blob/main/results/10_assemblies_comparison.png)
+
+## 20 assemblies (29 samples)
 ![stats2](https://github.com/collaborativebioinformatics/SVHack_metagenomics/blob/main/results/20_assemblies_comparison.png)
+
+## 100 assemblies (29 samples)
+![stats2](https://github.com/collaborativebioinformatics/SVHack_metagenomics/blob/main/results/100_assemblies_comparison.png)
+
 
 # Graph based mapq sampling accuracy check (> a million reads)
 ![stats](https://github.com/collaborativebioinformatics/SVHack_metagenomics/blob/main/myimage_1.png)
