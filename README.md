@@ -108,8 +108,11 @@ We have proceeded to build graph representations for _Pseudomonas aeruginosa_ us
 
 # Graph based mapq sampling accuracy check (> a million reads)
 As we want to count the number of aligned reads on the graph, we need to define criteria for a valid aligned read. The quality scores provided in the gam files are tricky to interpret as we have few details about the calculation method used here and it might be different from linear alignments MAPQ scores calculation methods. Here we look at the distribution of the quality scores found for one of our bam file to get an idea of its range and have a better overall insight of the threshold. This help to choose an appropriate threshold to filter the aligned reads and count the one that pass.
+
 ![stats](https://github.com/collaborativebioinformatics/SVHack_metagenomics/blob/main/results/Quality%20scores%20distribution.png)
 ![stats](https://github.com/collaborativebioinformatics/SVHack_metagenomics/blob/main/results/Quality%20scores%20distribution%20(nb%20of%20reads).png)
+
+Based on the distribution of the score, we plotted the selectivity of the filter based on the value of the chosen threshold.
 
 ![stats](https://github.com/collaborativebioinformatics/SVHack_metagenomics/blob/main/results/Threshold_selectivity.png)
 
