@@ -3,7 +3,7 @@
 <img src="https://github.com/collaborativebioinformatics/SVHack_metagenomics/assets/72709799/4a4ffcf6-d417-4efc-b2ed-ff0d4e8c7073" alt="Logo_v2" width="800"/>
 
 ## Group members 
-Shaheerah Khan, Lorianne Bosseau, Tony	Huang, Astrid	Canal, Muhammad Shahzaib, Pedro Henrique Sebe Rodrigues, Tania	Mangolini, Jason Yeung, Daniel Augustino, Sina Majidian
+Shaheerah Khan, Lorianne Bosseau, Tony	Huang, Astrid	Canal, Muhammad Shahzaib, Pedro Henrique Sebe Rodrigues, Tania	Mangolini, Jason Yeung, Daniel Agustinho, Sina Majidian
 
 # Impact of bacteria diversity on alignment accuracy for antibiotic resistant organisms
 
