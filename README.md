@@ -27,7 +27,6 @@ Upon generating a graph genome, we will test it by comparing it to a traditional
 
 
 ## Methods
-
 <img src="https://github.com/collaborativebioinformatics/SVHack_metagenomics/assets/72709799/fba2f329-ed47-448e-9a1b-45b231e134c6" alt="Flowchart" width="600"/>
 
 ## Details on the tasks at hand
