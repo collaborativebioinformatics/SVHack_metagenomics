@@ -98,7 +98,7 @@ We have proceeded to build graph representations for _Pseudomonas aeruginosa_ us
 ![500AssembliesForTestingRe fa gz fd8c760 417fcdf 11fe66b smooth final og viz_multiqc](https://github.com/collaborativebioinformatics/SVHack_metagenomics/assets/72709799/80fc43a3-f7b4-472c-babc-203ff70127bf)
 
 
-# stats of aligning 59 samples (DNA sequencing read)  on the linear reference
+# Stats of aligning DNA sequencing samples on the linear reference (59 samples)
 ![stats](https://github.com/collaborativebioinformatics/SVHack_metagenomics/blob/main/results/linear_ref.png)
 ![stats2](https://github.com/collaborativebioinformatics/SVHack_metagenomics/blob/main/results/linear_ref_perc.png)
 
