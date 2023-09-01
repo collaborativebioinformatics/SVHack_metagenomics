@@ -111,7 +111,6 @@ We have proceeded to build graph representations for _Pseudomonas aeruginosa_ us
 [script](https://raw.githubusercontent.com/collaborativebioinformatics/SVHack_metagenomics/main/code/pseudomonas_pipeline.sh)
 
 ```console
-# draft pipeline command
 # ref_genome: the reference genome
 # assembly_dir: the directory of assebmled genomes with which the graph genome is constructed
 # reads_dir: the directory sequencing reads
