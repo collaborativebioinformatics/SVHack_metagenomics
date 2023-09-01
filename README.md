@@ -77,6 +77,19 @@ Similar to the single reference genome, reads were mapped to pangenome graphs us
 'Total Alignment' and 'Total Aligned' statistics were extracted from resulting vgstats reports and the percentage of 'Total Aligned'/'Total Alignment' was calculated.
 
 
+# Software 
+The pipeline is written in Bash script. Here is a draft of the pipeline:
+
+```
+pseudomonas_pipeline.sh ref_genome  assembly_dir reads_dir
+```
+
+- `ref_genome`: the reference genome
+- `assembly_dir`: the directory of assebmled genomes with which the graph genome is constructed
+- `reads_dir`: the directory sequencing reads
+  
+
+
 # Results
 We have proceeded to build graph representations for _Pseudomonas aeruginosa_ using 5, 10, 20, 50, 100, and 500 genomes. As more assemblies are used, the graph grows in complexity and more regions of the genome are visibly accessories and not core. Observing the sequenced alignments of the 20 asssemblies used to create that graph, one can see big chunks of the sequences being absent from most of the different isolates, while others are present in all. 
 
