@@ -93,11 +93,13 @@ We have proceeded to build graph representations for _Pseudomonas aeruginosa_ us
 ![stats2](https://github.com/collaborativebioinformatics/SVHack_metagenomics/blob/main/results/20_assemblies_comparison.png)
 
 
-# Pipeline
+# Draft Pipeline
 
+![pseudomonas_pipeline.sh](https://raw.githubusercontent.com/collaborativebioinformatics/SVHack_metagenomics/main/code/pseudomonas_pipeline.sh)
+
+How to run:
 ```console
 ref_genome  assembly_dir reads_dir
-![pseudomonas_pipeline.sh](https://raw.githubusercontent.com/collaborativebioinformatics/SVHack_metagenomics/main/code/pseudomonas_pipeline.sh)
 ```
 
 # Use Cases
