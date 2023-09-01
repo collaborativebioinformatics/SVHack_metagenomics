@@ -57,8 +57,7 @@ Upon generating a graph genome, we will test it by comparing it to a traditional
 |Task B4 |Calculate statistics from alignments (time/#aligned reads/quality distribution). |  ||
 
 ### Read Mapping to Single Reference
-
-60 Illumina sequencing datasets including *P. aeruginosa* (NCBI Taxonomy ID 287) reads were downloaded from the Sequence Read Archive (metadata for these samples is included in the linked GitHub repository - https://github.com/collaborativebioinformatics/SVHack_metagenomics/tree/2797b9eec54665258a67ef0277fbd4d06d4e26c7/reads_info). The reference sequence [NC_002516.2](https://www.ncbi.nlm.nih.gov/nuccore/NC_002516.2/) (Genome assembly ASM676v1) derived from the PA01 strain was also downloaded. BWA-MEM (ver. BWA-0.7.17 (r1188)) was used for short-read alignment to the reference genome for all 60 datasets. Quality control statistics were obtained from output files using samtools (ver. ). 
+59 Illumina sequencing datasets including *P. aeruginosa* (NCBI Taxonomy ID 287) reads were downloaded from the Sequence Read Archive (metadata for these samples is included in the linked GitHub repository - https://github.com/collaborativebioinformatics/SVHack_metagenomics/tree/2797b9eec54665258a67ef0277fbd4d06d4e26c7/reads_info). The reference sequence [NC_002516.2](https://www.ncbi.nlm.nih.gov/nuccore/NC_002516.2/) (Genome assembly ASM676v1) derived from the PA01 strain was also downloaded and indexed using *>bwa index ref.fa.* BWA-MEM (ver. BWA-0.7.17 [r1188]) was used for short-read alignment to the reference genome for all 59 datasets (*>bwa mem ref.fa read1.fq read2.fq > aln-pe.sam)*. Quality control statistics were obtained from output files using Picard (ver. 2.26.11). 
 
 ### Construction of Pangenome Graphs
 
@@ -66,10 +65,22 @@ Of 773 available assemblies, 499 complete *P. aeruginosa* genomes were downloade
 
 ### Read Mapping to the Pangenome
 
-Similar to the single reference genome, reads were mapped to pangenome graphs using GraphAligner (v1.0.10) from the docker image [jmonlong/job-graphaligner:latest](https://hub.docker.com/layers/jmonlong/job-graphaligner/latest/images/sha256-c4f833ea8fd303dbe93872f962ff168684e4dbc5a23b4f844c1e4038d7685c3f?context=explore). Default values related to seeding and extension were used (-seeds-minimizer-count 5 --seeds-minimizer-length 19 --seeds-minimizer-windowsize 30 --seeds-minimizer-chunksize 100 -b 5 -B 10 -C 10000). Statistics related to alignment were extracted from resulting GAM files using vg (ver. 1.23.0) from docker image [biocontainers/vg](https://registry.hub.docker.com/r/biocontainers/vg).
+Similar to the single reference genome, reads were mapped to pangenome graphs using GraphAligner (v1.0.10) from the docker image [jmonlong/job-graphaligner:latest](https://hub.docker.com/layers/jmonlong/job-graphaligner/latest/images/sha256-c4f833ea8fd303dbe93872f962ff168684e4dbc5a23b4f844c1e4038d7685c3f?context=explore). Default values related to seeding and extension were used (-seeds-minimizer-count 5 --seeds-minimizer-length 19 --seeds-minimizer-windowsize 30 --seeds-minimizer-chunksize 100 -b 5 -B 10 -C 10000). Statistics related to alignment were extracted from resulting GAM files using vg (ver. 1.23.0) from docker image [biocontainers/vg](https://registry.hub.docker.com/r/biocontainers/vg). The following code demonstrates this process:
+  
+    # Create a file with sample names
+          for i in *1.fastq.gz ; do echo ${i/_1.fastq.gz/} >> samples.txt ;done
+    
+    # Run GraphAligner with 5 assembly graph genome for samples 1-30 downloaded 
+    for i in $(cat samples.txt) ; do echo $i ; GraphAligner -g 5AssembliesForTestingRe.fa.gz.fd8c760.417fcdf.11fe66b.smooth.final.gfa -f ${i}_1.fastq.gz -f ${i}_2.fastq.gz -a ${i}_5assemblieswre.gam; done
+    
+    # Extracting stats
+    for i in $( ls -1 ./*gam); do echo $i; vg stats -a $i >> ${i}_5assemblies.vgstats; done
+
+'Total Alignment' and 'Total Aligned' statistics were extracted from resulting vgstats reports and the percentage of 'Total Aligned'/'Total Alignment' was calculated.
+
 
 # Results
-We have proceeded to build graph representations for _Pseudomonas aeruginosa_ using 5, 10 and 20 genomes. As more assemblies are used, the graph grows in complexity and more regions of the genome are visibly accessories and not core. Observing the sequenced alignments of the 20 asssemblies used to create that graph, one can see big chunks of the sequences being absent from most of the different isolates, while others are present in all. 
+We have proceeded to build graph representations for _Pseudomonas aeruginosa_ using 5, 10, 20, 50, 100, and 500 genomes. As more assemblies are used, the graph grows in complexity and more regions of the genome are visibly accessories and not core. Observing the sequenced alignments of the 20 asssemblies used to create that graph, one can see big chunks of the sequences being absent from most of the different isolates, while others are present in all. 
 
 ![Results_graphs_Hackathon2023 (2)](https://github.com/collaborativebioinformatics/SVHack_metagenomics/assets/72709799/37bc20b3-b37c-49ba-bdfc-097842b67c6a)
 ![500AssembliesForTestingRe fa gz fd8c760 417fcdf 11fe66b smooth final og lay draw](https://github.com/collaborativebioinformatics/SVHack_metagenomics/assets/72709799/78c50f80-661b-4c40-b9d7-502915a4e3cb)
@@ -80,3 +91,7 @@ We have proceeded to build graph representations for _Pseudomonas aeruginosa_ us
 ![stats](https://github.com/collaborativebioinformatics/SVHack_metagenomics/blob/main/results/linear_ref.png)
 ![stats2](https://github.com/collaborativebioinformatics/SVHack_metagenomics/blob/main/results/linear_ref_perc.png)
 
+# Use Cases
+Pangenomes have been used in the past to elucidate the core genomes of pathogens, improve detection of horizontal gene transfer events, and study their evolutionary trajectories in different environments. These applications greatly expand our understanding of bacterial or host-pathogen dynamics in fields with practical applications to both medicine and agriculture.
+
+Metagenomics and sequencing of clinical isolates are gaining traction for identification of antimicrobial resistance profiles and diagnosis. Pangenomics can greatly benefit these clinical applications. Creating pangenomes provides additional insight into pathogen evolution and transmission. For example, including local isolates in pangenomes could inform outbreak investigation efforts and lead to improved infection prevention within hospital systems. Mapping reads directly to pangenomes is a recent advance that may improve detection of polymorphisms related to antimicrobial resistance or virulence. Examining practical considerations and comparison with standard practices demonstrates the promise of alignment to pangenomes and drawbacks.
