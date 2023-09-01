@@ -56,6 +56,18 @@ Upon generating a graph genome, we will test it by comparing it to a traditional
 |Task B3 |Align reads to the reference genome from B1 using BWA MEM. | Shaheereh, Pedro ||
 |Task B4 |Calculate statistics from alignments (time/#aligned reads/quality distribution). |  ||
 
+### Read Mapping to Single Reference
+
+60 Illumina sequencing datasets including *P. aeruginosa* (NCBI Taxonomy ID 287) reads were downloaded from the Sequence Read Archive (metadata for these samples is included in the linked GitHub repository - https://github.com/collaborativebioinformatics/SVHack_metagenomics/tree/2797b9eec54665258a67ef0277fbd4d06d4e26c7/reads_info). The reference sequence [NC_002516.2](https://www.ncbi.nlm.nih.gov/nuccore/NC_002516.2/) (Genome assembly ASM676v1) derived from the PA01 strain was also downloaded. BWA-MEM (ver. 0.7.17 [r1188]) was used for short-read alignment to the reference genome for all 60 datasets. Quality control statistics were obtained from output files using samtools (ver. ). 
+
+### Construction of Pangenome Graphs
+
+Of 773 available assemblies, 499 complete *P. aeruginosa* genomes were downloaded from NCBI on 8/30/2023. Metadata for the included sequences is included in the linked GitHub repository - https://github.com/collaborativebioinformatics/SVHack_metagenomics/tree/2797b9eec54665258a67ef0277fbd4d06d4e26c7/assemblies_info. Pangenome graphs of varying sizes (5, 10, 20, 50, 100, 500 genomes) were created using the reference [NC_002516.2](https://www.ncbi.nlm.nih.gov/nuccore/NC_002516.2/) and complete genome assemblies such that all genomes in the smaller pangenome graphs are contained in the larger graphs. All pangenome graphs were created using the pggb tool (ver. 0.5.4 - Fatica) with default settings applied (pggb -i assembly.fasta.gz -o . -t 16 -n 5 -p 90 -s 5000).
+
+### Read Mapping to the Pangenome
+
+Similar to the single reference genome, reads were mapped to pangenome graphs using GraphAligner (v1.0.17b). 
+
 # Results
 We have proceeded to build graph representations for _Pseudomonas aeruginosa_ using 5, 10 and 20 genomes. As more assemblies are used, the graph grows in complexity and more regions of the genome are visibly accessories and not core. Observing the sequenced alignments of the 20 asssemblies used to create that graph, one can see big chunks of the sequences being absent from most of the different isolates, while others are present in all. 
 
