@@ -119,7 +119,7 @@ We have proceeded to build graph representations for _Pseudomonas aeruginosa_ us
 ## 500 assemblies 
 ![stats2](https://github.com/collaborativebioinformatics/SVHack_metagenomics/blob/main/results/500_assemblies_comparison.png)
 
-## Aligned Reads
+## Aligned Reads (%)
 ![stats2](https://github.com/collaborativebioinformatics/SVHack_metagenomics/blob/main/results/aligned_reads_comparison.png)
 
 
