@@ -92,6 +92,14 @@ We have proceeded to build graph representations for _Pseudomonas aeruginosa_ us
 # 20 assemblies graph genome vs linear reference (29 samples)
 ![stats2](https://github.com/collaborativebioinformatics/SVHack_metagenomics/blob/main/results/20_assemblies_comparison.png)
 
+
+# Pipeline
+
+```console
+ref_genome  assembly_dir reads_dir
+![pseudomonas_pipeline.sh](https://raw.githubusercontent.com/collaborativebioinformatics/SVHack_metagenomics/main/code/pseudomonas_pipeline.sh)
+```
+
 # Use Cases
 Pangenomes have been used in the past to elucidate the core genomes of pathogens, improve detection of horizontal gene transfer events, and study their evolutionary trajectories in different environments. These applications greatly expand our understanding of bacterial or host-pathogen dynamics in fields with practical applications to both medicine and agriculture.
 
