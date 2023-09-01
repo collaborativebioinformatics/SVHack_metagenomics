@@ -95,9 +95,8 @@ We have proceeded to build graph representations for _Pseudomonas aeruginosa_ us
 
 # Draft Pipeline
 
-![script](https://raw.githubusercontent.com/collaborativebioinformatics/SVHack_metagenomics/main/code/pseudomonas_pipeline.sh)
+[script](https://raw.githubusercontent.com/collaborativebioinformatics/SVHack_metagenomics/main/code/pseudomonas_pipeline.sh)
 
-How to run:
 ```console
 #draft pipeline
 pseudomonas_pipeline.sh ref_genome  assembly_dir reads_dir
